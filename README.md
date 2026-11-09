@@ -4,15 +4,15 @@ This repository holds the code and results for the IMT4210 Computational Forensi
 
 The notebook fine-tunes bert-base-uncased on two cybersecurity NER datasets, CyNER and APTNER. Each model is trained on a subset of the training data.
 
-IMT4210_notebook.ipynb holds all the code, with the outputs from the final run.
+IMT4210_project_cybersecurity_NER.ipynb holds all the code, with the outputs from the final run.
 
 cyner_results.json and aptner_results.json hold the scores from the 51 sweep runs. The learning curves and the per type results in the paper are computed from these two files.
 
 cyner_test_predictions.json holds the test set predictions from the full data CyNER run. The code reuses this file. The CyNER results are the same in every run.
 
-The APTNER predictions are not included. The code creates them and uses them for the error analysis. The file from the final run was not saved. Its results are in the saved output of cells 24 and 31. The sweep cells show no training output, because the final run loaded the saved results.
+The APTNER predictions are not included. The code creates them and uses them for the error analysis. The file from the final run was not saved. Its results are in the saved output of the code. The sweep cells show no training output, because the final run loaded the saved results.
 
-The APTNER predictions are not included as a separate file. Cell 24 trains one full data model on APTNER and writes its predictions to aptner_test_predictions.json. Cell 31 reads the file back for the error analysis. The file from the final run was not saved outside Colab. The APTNER error analysis in the paper comes from that run, and its results are in the saved output of cells 24 and 31. A new run creates the file again, but the numbers can differ slightly, because GPU training is not fully deterministic.
+The code trains one full data model on APTNER and writes its predictions to aptner_test_predictions.json. Cell 31 reads the file back for the error analysis. The file from the final run was not saved outside Colab. The APTNER error analysis in the paper comes from that run, and its results are in the saved output of the code. A new run creates the file again, but the numbers can differ slightly, because GPU training is not fully deterministic.
 
 The datasets are not in this repository. The notebook downloads them from the original repositories. CyNER is at https://github.com/aiforsec/CyNER. APTNER is at https://github.com/wangxuren/APTNER.
 
