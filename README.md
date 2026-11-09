@@ -8,7 +8,7 @@ IMT4210_notebook.ipynb holds all the code, with the outputs from the final run.
 
 cyner_results.json and aptner_results.json hold the scores from the 51 sweep runs. The learning curves and the per type results in the paper are computed from these two files.
 
-cyner_test_predictions.json and aptner_test_predictions.json holds test set predictions from one full data run on each dataset. The error analysis in the paper is created from these.
+cyner_test_predictions.json holds test set predictions from one full data run on each dataset. The error analysis in the paper is created from these.
 
 The datasets are not in this repository. The notebook downloads them from the original repositories. CyNER is at https://github.com/aiforsec/CyNER. APTNER is at https://github.com/wangxuren/APTNER.
 
