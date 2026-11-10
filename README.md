@@ -10,7 +10,7 @@ cyner_results.json and aptner_results.json hold the scores from the 51 sweep run
 
 cyner_test_predictions.json holds the test set predictions from the full data CyNER run. The code reuses this file. The CyNER results are the same in every run.
 
-The APTNER predictions are not included. The code creates them and uses them for the error analysis. The file from the final run was not saved. Its results are in the saved output of the code. The sweep cells show no training output, because the final run loaded the saved results.
+aptner_test_predictions.json holds the test set predictions from the full data APTNER run. The code creates this file and uses it for the error analysis. A different run can give different numbers, but with little variance. 
 
 The code trains one full data model on APTNER and writes its predictions to aptner_test_predictions.json. Cell 31 reads the file back for the error analysis. The file from the final run was not saved outside Colab. The APTNER error analysis in the paper comes from that run, and its results are in the saved output of the code. A new run creates the file again, but the numbers can differ slightly, because GPU training is not fully deterministic.
 
