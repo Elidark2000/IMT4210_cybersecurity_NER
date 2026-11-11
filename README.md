@@ -12,12 +12,11 @@ cyner_test_predictions.json holds the test set predictions from the full data Cy
 
 aptner_test_predictions.json holds the test set predictions from the full data APTNER run. The code creates this file and uses it for the error analysis.
 
-The APTNER error analysis in the paper comes from that run, and its results are in the saved output of the code. A new run creates the file again, but the numbers can differ slightly, because GPU training is not fully deterministic.
-
-The datasets are not in this repository. The notebook downloads them from the original repositories. CyNER is at https://github.com/aiforsec/CyNER. APTNER is at https://github.com/wangxuren/APTNER.
+The notebook downloads from the original repositories. CyNER is at https://github.com/aiforsec/CyNER. APTNER is at https://github.com/wangxuren/APTNER.
 
 The notebook runs in Google Colab on a T4 GPU.
 
+How to run:
 1. Open the notebook in Colab and choose a T4 GPU runtime.
 2. Upload the JSON files to the Colab session.
 3. Run all cells
