@@ -10,7 +10,7 @@ cyner_results.json and aptner_results.json hold the scores from the 51 sweep run
 
 cyner_test_predictions.json holds the test set predictions from the full data CyNER run. The code reuses this file. The CyNER results are the same in every run.
 
-aptner_test_predictions.json holds the test set predictions from the full data APTNER run. The code creates this file and uses it for the error analysis. A different run can give different numbers, but with little variance. 
+aptner_test_predictions.json holds the test set predictions from the full data APTNER run. The code creates this file and uses it for the error analysis.
 
 The APTNER error analysis in the paper comes from that run, and its results are in the saved output of the code. A new run creates the file again, but the numbers can differ slightly, because GPU training is not fully deterministic.
 
